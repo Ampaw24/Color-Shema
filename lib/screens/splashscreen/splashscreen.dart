@@ -1,10 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'dart:async';
+import 'package:colorschema/constants/textstyle.dart';
 import 'package:flutter/material.dart';
 import '../homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:colorschema/constants/colors.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import '../Login-SignUp/login.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -22,12 +25,12 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<Timer> loadUp() async {
-    return Timer(Duration(days: 5), onDoneLoading);
+    return Timer(Duration(seconds: 6), onDoneLoading);
   }
 
   void onDoneLoading() {
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (context) => HomePage()),
+      MaterialPageRoute(builder: (context) => LoginPage()),
     );
   }
 
@@ -51,7 +54,16 @@ class _SplashScreenState extends State<SplashScreen> {
         
             ),
           ),
-          
+          Text("ALPHA SCHEMA",style: GoogleFonts.poppins(
+            textStyle: kCompanyTitleText,
+          ),),
+             Text("The Color Scheming App",style: GoogleFonts.poppins(
+            textStyle: kCompanysubTitleText,
+          ),),
+          SizedBox(height: 20,),
+          SpinKitThreeBounce(
+            color: GreenishgDarkTheme['ballWhite'],
+          )
         ],
       ),
     );
