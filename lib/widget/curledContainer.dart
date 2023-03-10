@@ -20,7 +20,7 @@ class CurledContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 356,
-      height: MediaQuery.of(context).size.height / 1.43,
+      height: MediaQuery.of(context).size.height / 1.5,
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(

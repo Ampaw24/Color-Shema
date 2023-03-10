@@ -8,6 +8,7 @@ Map<String, Color> GreenishgDarkTheme = {
       'ballWhite' : Color(0xffC6C5C5),
       'gtextDark' : Color(0xff050E0D),
       'formfieldwhite':Color(0xffEEE6E6),
+      'button':Color(0xff142831),
 
 };
 
