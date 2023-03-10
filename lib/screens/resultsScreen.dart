@@ -3,7 +3,6 @@
 import 'package:colorschema/screens/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:colorschema/networking/networkhelper.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:colorschema/widget/shadowedcontainer.dart';
 
 
