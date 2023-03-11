@@ -1,11 +1,9 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:colorschema/screens/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:colorschema/constants/colors.dart';
 import 'package:colorschema/constants/textstyle.dart';
-
 import '../../widget/curledContainer.dart';
 import '../../widget/custombutton.dart';
 import '../../widget/formfieldbox.dart';
@@ -25,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
-            children: [
+            children: [      
               Center(
                 child: Container(
                     margin: const EdgeInsets.only(top: 20),
@@ -61,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                       prefixi: Icons.person,
                       hinttext: "Enter UserName",
                     ),
-                    // ignore: prefer_const_constructors
+                   
                     SizedBox(
                       height: 50,
                     ),
