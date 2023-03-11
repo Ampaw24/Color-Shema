@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:colorschema/screens/Login-SignUp/signup.dart';
 import 'package:colorschema/screens/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,7 +24,7 @@ class _LoginPageState extends State<LoginPage> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
-            children: [      
+            children: [
               Center(
                 child: Container(
                     margin: const EdgeInsets.only(top: 20),
@@ -55,11 +56,9 @@ class _LoginPageState extends State<LoginPage> {
                       height: 50,
                     ),
                     FormFieldBox(
-    
                       prefixi: Icons.person,
                       hinttext: "Enter UserName",
                     ),
-                   
                     SizedBox(
                       height: 50,
                     ),
@@ -70,10 +69,35 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     CustomButton1(
                       onpressed: () {
-                       
-                        
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePage()));
                       },
                       buttonText: "Login",
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: 40,
+                        ),
+                        GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                        builder: (context) => SignUpPage()));
+                            },
+                            child: Text(
+                              "Create Account",
+                              style: kCreateTextfield,
+                            )),
+                        SizedBox(
+                          width: 30,
+                        ),
+                        Text("Forgot Password?")
+                      ],
                     )
                   ],
                 ),

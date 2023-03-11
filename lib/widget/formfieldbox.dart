@@ -4,19 +4,20 @@ import '../constants/colors.dart';
 import '../constants/textstyle.dart';
 
 class FormFieldBox extends StatelessWidget {
-  const FormFieldBox(
-      {super.key,
-      required this.hinttext,
-      this.prefixi,
-      this.suffixi,
-      this.showtxt = false,
-      this.postAction,
-      });
+  const FormFieldBox({
+    super.key,
+    required this.hinttext,
+    this.prefixi,
+    this.suffixi,
+    this.showtxt = false,
+    this.postAction,
+    this.controller
+  });
   final String hinttext;
   final IconData? prefixi, suffixi;
   final bool showtxt;
-  final VoidCallback ?postAction;
-
+  final VoidCallback? postAction;
+  final controller;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -27,6 +28,7 @@ class FormFieldBox extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       child: TextFormField(
+        controller: controller,
         obscureText: showtxt,
         cursorHeight: 25,
         decoration: InputDecoration(
@@ -35,9 +37,7 @@ class FormFieldBox extends StatelessWidget {
                 icon: Icon(
                   suffixi,
                 )),
-            prefixIcon: IconButton(
-              onPressed:(){}, 
-              icon: Icon(prefixi)),
+            prefixIcon: IconButton(onPressed: () {}, icon: Icon(prefixi)),
             hintText: "Enter UserName",
             hintStyle: kLoginTextfield,
             focusedBorder: OutlineInputBorder(

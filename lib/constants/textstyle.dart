@@ -32,3 +32,9 @@ const kLoginbutton = TextStyle(
   fontSize: 26,
   fontStyle: FontStyle.normal,
 );
+const kCreateTextfield = TextStyle(
+  color: Color(0xff050E0D),
+  fontWeight: FontWeight.bold,
+  fontSize: 14,
+  fontStyle: FontStyle.normal,
+);
