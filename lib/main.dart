@@ -1,3 +1,4 @@
+import 'package:colorschema/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'screens/splashscreen/splashscreen.dart';
 
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Color Schema',
-      theme: ThemeData(
-        primaryColor: Colors.purple,
+      theme: ThemeData.light().copyWith(
+      primaryColor: GreenishgDarkTheme['themeColorDark'],
+      scaffoldBackgroundColor: GreenishgDarkTheme['themeColorDark']
       ),
       home: const SplashScreen(),
     );

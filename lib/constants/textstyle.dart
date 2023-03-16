@@ -38,3 +38,41 @@ const kCreateTextfield = TextStyle(
   fontSize: 14,
   fontStyle: FontStyle.normal,
 );
+const kHomewelcome = TextStyle(
+  color: Color(0xff444848),
+  fontWeight: FontWeight.w400,
+  fontSize: 22,
+  fontStyle: FontStyle.normal,
+);
+const kHomeBannerText = TextStyle(
+  color: Colors.black,
+  fontWeight: FontWeight.w600,
+  fontSize: 30,
+  fontStyle: FontStyle.normal,
+);
+const kCardText = TextStyle(
+  color: Colors.white,
+  fontWeight: FontWeight.w600,
+  fontSize: 30,
+  fontStyle: FontStyle.normal,
+);
+const kcardNoteText = TextStyle(
+  color: Colors.white,
+  fontWeight: FontWeight.w500,
+  fontSize: 16,
+  fontStyle: FontStyle.normal,
+);
+const kCreatedropfield = TextStyle(
+  color: Color.fromARGB(255, 12, 19, 18),
+  fontWeight: FontWeight.w500,
+  fontSize: 20,
+  fontStyle: FontStyle.normal,
+);
+const kcardNoteText2 = TextStyle(
+  color: Colors.white,
+  fontWeight: FontWeight.w500,
+  fontSize: 30,
+  fontStyle: FontStyle.normal,
+);
+
+

@@ -92,22 +92,10 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "flutter_web_plugins",
-      "rootUri": "file:///C:/src/flutter/packages/flutter_web_plugins",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-    },
-    {
       "name": "flutter_widget_from_html_core",
       "rootUri": "file:///C:/Users/Young%20Geeks%20Pc/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_widget_from_html_core-0.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.13"
-    },
-    {
-      "name": "fluttertoast",
-      "rootUri": "file:///C:/Users/Young%20Geeks%20Pc/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
     },
     {
       "name": "fwfh_text_style",
@@ -302,7 +290,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-03-11T14:29:00.498712Z",
+  "generated": "2023-03-15T10:03:55.595412Z",
   "generator": "pub",
   "generatorVersion": "3.0.0-313.0.dev"
 }

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:colorschema/constants/colors.dart';
 import 'package:colorschema/widget/curledContainer.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import '../../constants/textstyle.dart';
 import '../../widget/custombutton.dart';
 import '../../widget/formfieldbox.dart';
@@ -21,12 +20,8 @@ TextEditingController _mail = TextEditingController();
 
 class _SignUpPageState extends State<SignUpPage> {
   void verifyMe(String username, String password, String mail) {
-    if (username.isEmpty) {
-      Fluttertoast.showToast(
-          msg: "User Name Required ",
-          gravity: ToastGravity.CENTER,
-          fontSize: 30,
-          toastLength: Toast.LENGTH_SHORT);
+    if (username == " ") {
+
       print("Helo ");
     }
   }
@@ -99,7 +94,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     CustomButton1(
                       onpressed: () {
                         setState(() {
-                          verifyMe(_username.text, _password.text, _mail.text);
+       
                         });
                       },
                       buttonText: "Create Account",
