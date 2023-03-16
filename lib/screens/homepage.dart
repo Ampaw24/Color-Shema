@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       FormFieldBox(
                           controller: hexCode,
-                          prefixi: Icons.account_tree_sharp,
+                          prefixi: Icons.book,
                           hinttext: "Enter Color Hex Code"),
                       SizedBox(
                         height: 20,

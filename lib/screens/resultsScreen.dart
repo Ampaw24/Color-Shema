@@ -1,10 +1,7 @@
-// ignore_for_file: prefer_const_constructors
-
+// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables
 import 'package:colorschema/screens/homepage.dart';
 import 'package:flutter/material.dart';
-import 'package:colorschema/networking/networkhelper.dart';
 import 'package:colorschema/widget/shadowedcontainer.dart';
-
 
 class ResultPage extends StatefulWidget {
   const ResultPage({super.key, required this.colorResult});
@@ -41,11 +38,8 @@ class _ResultPageState extends State<ResultPage> {
     red3 = data['colors'][2]['rgb']['r'];
     green3 = data['colors'][2]['rgb']['g'];
     blue3 = data['colors'][2]['rgb']['b'];
-
-    //color code
-    // code1 = data['datacolors'][0]['name']['closest_named_hex'];
-    // code3 = data['datacolors'][2]['name']['closest_named_hex'];
-    // code2 = data['datacolors'][1]['name']['closest_named_hex'];
+     
+     //color 4
     code1 = data['colors'][0]['hex']['value'];
     code2 = data['colors'][1]['hex']['value'];
     code3 = data['colors'][2]['hex']['value'];
@@ -65,7 +59,7 @@ class _ResultPageState extends State<ResultPage> {
                 return HomePage();
               }));
             },
-            // ignore: prefer_const_constructors
+            // igprefer_const_constructorsnore: 
             icon: Icon(
               Icons.arrow_back_ios_new,
               color: Color.fromARGB(255, 19, 18, 18),

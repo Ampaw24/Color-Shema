@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../constants/colors.dart';
 import '../constants/textstyle.dart';
 
@@ -23,8 +22,6 @@ class FormFieldBox extends StatelessWidget {
   final bool showtxt;
   final VoidCallback? postAction;
   final MyCallback? onChangedAction;
-  
- 
   final controller;
   @override
   Widget build(BuildContext context) {
