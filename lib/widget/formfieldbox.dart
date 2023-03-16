@@ -3,20 +3,28 @@ import 'package:flutter/material.dart';
 import '../constants/colors.dart';
 import '../constants/textstyle.dart';
 
+typedef MyCallback = void Function(String);
+
 class FormFieldBox extends StatelessWidget {
-  const FormFieldBox({
-    super.key,
-    required this.hinttext,
-    this.prefixi,
-    this.suffixi,
-    this.showtxt = false,
-    this.postAction,
-    this.controller
-  });
+  const FormFieldBox(
+      {super.key,
+      required this.hinttext,
+      this.prefixi,
+      this.suffixi,
+      this.showtxt = false,
+      this.postAction,
+      this.controller,
+      this.onChangedAction,
+ 
+      
+      });
   final String hinttext;
   final IconData? prefixi, suffixi;
   final bool showtxt;
   final VoidCallback? postAction;
+  final MyCallback? onChangedAction;
+  
+ 
   final controller;
   @override
   Widget build(BuildContext context) {
@@ -28,6 +36,7 @@ class FormFieldBox extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       child: TextFormField(
+        onChanged: onChangedAction,
         controller: controller,
         obscureText: showtxt,
         cursorHeight: 25,

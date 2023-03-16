@@ -22,7 +22,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   String selectedItem = "Triad";
-  String hexCode = "";
+ TextEditingController hexCode = TextEditingController() ;
 
   List<DropdownMenuItem> getDropdownData() {
     List<DropdownMenuItem<String>> dropdownItem = [];
@@ -39,14 +39,7 @@ class _HomePageState extends State<HomePage> {
     return dropdownItem;
   }
 
-  Widget sheetContent(context) => Container(
-        child: Center(
-          child: Text(
-            "",
-            style: TextStyle(fontSize: 40, color: Colors.black),
-          ),
-        ),
-      );
+
 
   @override
   Widget build(BuildContext context) {
@@ -71,12 +64,30 @@ class _HomePageState extends State<HomePage> {
                           ),
                         )),
                     Positioned(
-                      left: MediaQuery.of(context).size.width * 0.85,
+                      left: MediaQuery.of(context).size.width * 0.80,
                       top: 40,
                       child: Container(
+                        decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color:
+                                  Color.fromARGB(255, 0, 0, 0).withOpacity(0.3),
+                              spreadRadius: 1,
+                              blurRadius: 10,
+                              offset: Offset(0, 5),
+                            ),
+                          ],
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white,
+                        ),
                         width: 47,
                         height: 43,
-                        color: Colors.black,
+                        child: Icon(
+                          Icons.menu,
+                          size: 25,
+                          weight: 4,
+                          color: Color.fromARGB(255, 126, 125, 125),
+                        ),
                       ),
                     ),
                     Positioned(
@@ -84,7 +95,8 @@ class _HomePageState extends State<HomePage> {
                         top: 60,
                         child: Text(
                           "Explore The Best \nColor Scheme",
-                          style: GoogleFonts.poppins(textStyle: kHomeBannerText),
+                          style:
+                              GoogleFonts.poppins(textStyle: kHomeBannerText),
                         ))
                   ],
                 ),
@@ -105,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                     color: GreenishgDarkTheme['themeColorDark'],
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Column(     
+                  child: Column(
                     children: [
                       Container(
                         padding: const EdgeInsets.all(35),
@@ -118,6 +130,7 @@ class _HomePageState extends State<HomePage> {
                         height: 15,
                       ),
                       FormFieldBox(
+                          controller: hexCode,
                           prefixi: Icons.account_tree_sharp,
                           hinttext: "Enter Color Hex Code"),
                       SizedBox(
@@ -169,12 +182,15 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(30)),
                           child: IconButton(
                               onPressed: () {
-        
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => LoadingPage(
+                                        colorcode: hexCode.text,
+                                        mode: selectedItem)));
                               },
                               icon: Icon(
                                 Icons.check,
                                 size: 30,
-                               
+                                weight: 10,
                               )),
                         ),
                       )

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Color Schema',
       theme: ThemeData.light().copyWith(
       primaryColor: GreenishgDarkTheme['themeColorDark'],
-      scaffoldBackgroundColor: GreenishgDarkTheme['themeColorDark']
+   
       ),
       home: const SplashScreen(),
     );
