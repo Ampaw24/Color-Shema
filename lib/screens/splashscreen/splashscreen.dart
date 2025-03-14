@@ -3,7 +3,6 @@
 import 'dart:async';
 import 'package:colorschema/constants/textstyle.dart';
 import 'package:flutter/material.dart';
-import '../homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:colorschema/constants/colors.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';

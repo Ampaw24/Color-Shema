@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'colors.dart';
 
 const kCompanyTitleText = TextStyle(
   color: Colors.white,

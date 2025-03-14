@@ -5,7 +5,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import '../networking/networkhelper.dart';
 
 class LoadingPage extends StatefulWidget {
-  const LoadingPage({required this.colorcode, required this.mode});
+  const LoadingPage({super.key, required this.colorcode, required this.mode});
   final String colorcode;
   final String mode;
   @override

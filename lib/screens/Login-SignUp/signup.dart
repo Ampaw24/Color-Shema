@@ -28,7 +28,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
   void NextPage() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => LoginPage()));
+        context, MaterialPageRoute(builder: (context) => const LoginPage()));
   }
 
   void showToast() {}
@@ -44,7 +44,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   margin: const EdgeInsets.only(top: 20),
                   width: 190,
                   height: 160,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage("assets/logomain.png")))),
@@ -66,7 +66,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 50,
                     ),
                     FormFieldBox(
@@ -74,7 +74,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       prefixi: Icons.person,
                       hinttext: "Enter UserName",
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 50,
                     ),
                     FormFieldBox(
@@ -82,7 +82,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       prefixi: Icons.mail,
                       hinttext: "Enter Email",
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 50,
                     ),
                     FormFieldBox(

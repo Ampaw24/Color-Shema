@@ -35,39 +35,37 @@ class Data {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["mode"] = mode;
-    _data["count"] = count;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["mode"] = mode;
+    data["count"] = count;
     if(colors != null) {
-      _data["colors"] = colors?.map((e) => e.toJson()).toList();
+      data["colors"] = colors?.map((e) => e.toJson()).toList();
     }
     if(seed != null) {
-      _data["seed"] = seed?.toJson();
+      data["seed"] = seed?.toJson();
     }
     if(image != null) {
-      _data["image"] = image?.toJson();
+      data["image"] = image?.toJson();
     }
     if(links != null) {
-      _data["_links"] = links?.toJson();
+      data["_links"] = links?.toJson();
     }
     if(embedded != null) {
-      _data["_embedded"] = embedded?.toJson();
+      data["_embedded"] = embedded?.toJson();
     }
-    return _data;
+    return data;
   }
 }
 
 class Embedded2 {
   Embedded2();
 
-  Embedded2.fromJson(Map<String, dynamic> json) {
-
-  }
+  Embedded2.fromJson(Map<String, dynamic> json);
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
 
-    return _data;
+    return data;
   }
 }
 
@@ -87,12 +85,12 @@ class Links2 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["self"] = self;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["self"] = self;
     if(schemes != null) {
-      _data["schemes"] = schemes?.toJson();
+      data["schemes"] = schemes?.toJson();
     }
-    return _data;
+    return data;
   }
 }
 
@@ -136,16 +134,16 @@ class Schemes {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["monochrome"] = monochrome;
-    _data["monochrome-dark"] = monochromeDark;
-    _data["monochrome-light"] = monochromeLight;
-    _data["analogic"] = analogic;
-    _data["complement"] = complement;
-    _data["analogic-complement"] = analogicComplement;
-    _data["triad"] = triad;
-    _data["quad"] = quad;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["monochrome"] = monochrome;
+    data["monochrome-dark"] = monochromeDark;
+    data["monochrome-light"] = monochromeLight;
+    data["analogic"] = analogic;
+    data["complement"] = complement;
+    data["analogic-complement"] = analogicComplement;
+    data["triad"] = triad;
+    data["quad"] = quad;
+    return data;
   }
 }
 
@@ -165,10 +163,10 @@ class Image2 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["bare"] = bare;
-    _data["named"] = named;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["bare"] = bare;
+    data["named"] = named;
+    return data;
   }
 }
 
@@ -224,55 +222,53 @@ class Seed {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(hex != null) {
-      _data["hex"] = hex?.toJson();
+      data["hex"] = hex?.toJson();
     }
     if(rgb != null) {
-      _data["rgb"] = rgb?.toJson();
+      data["rgb"] = rgb?.toJson();
     }
     if(hsl != null) {
-      _data["hsl"] = hsl?.toJson();
+      data["hsl"] = hsl?.toJson();
     }
     if(hsv != null) {
-      _data["hsv"] = hsv?.toJson();
+      data["hsv"] = hsv?.toJson();
     }
     if(name != null) {
-      _data["name"] = name?.toJson();
+      data["name"] = name?.toJson();
     }
     if(cmyk != null) {
-      _data["cmyk"] = cmyk?.toJson();
+      data["cmyk"] = cmyk?.toJson();
     }
     if(xyz != null) {
-      _data["XYZ"] = xyz?.toJson();
+      data["XYZ"] = xyz?.toJson();
     }
     if(image != null) {
-      _data["image"] = image?.toJson();
+      data["image"] = image?.toJson();
     }
     if(contrast != null) {
-      _data["contrast"] = contrast?.toJson();
+      data["contrast"] = contrast?.toJson();
     }
     if(links != null) {
-      _data["_links"] = links?.toJson();
+      data["_links"] = links?.toJson();
     }
     if(embedded != null) {
-      _data["_embedded"] = embedded?.toJson();
+      data["_embedded"] = embedded?.toJson();
     }
-    return _data;
+    return data;
   }
 }
 
 class Embedded1 {
   Embedded1();
 
-  Embedded1.fromJson(Map<String, dynamic> json) {
-
-  }
+  Embedded1.fromJson(Map<String, dynamic> json);
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
 
-    return _data;
+    return data;
   }
 }
 
@@ -288,11 +284,11 @@ class Links1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(self != null) {
-      _data["self"] = self?.toJson();
+      data["self"] = self?.toJson();
     }
-    return _data;
+    return data;
   }
 }
 
@@ -308,9 +304,9 @@ class Self1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["href"] = href;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["href"] = href;
+    return data;
   }
 }
 
@@ -326,9 +322,9 @@ class Contrast1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["value"] = value;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["value"] = value;
+    return data;
   }
 }
 
@@ -348,10 +344,10 @@ class Image1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["bare"] = bare;
-    _data["named"] = named;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["bare"] = bare;
+    data["named"] = named;
+    return data;
   }
 }
 
@@ -383,15 +379,15 @@ class Xyz1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["value"] = value;
-    _data["X"] = x;
-    _data["Y"] = y;
-    _data["Z"] = z;
-    return _data;
+    data["value"] = value;
+    data["X"] = x;
+    data["Y"] = y;
+    data["Z"] = z;
+    return data;
   }
 }
 
@@ -415,11 +411,11 @@ class Fraction9 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["X"] = x;
-    _data["Y"] = y;
-    _data["Z"] = z;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["X"] = x;
+    data["Y"] = y;
+    data["Z"] = z;
+    return data;
   }
 }
 
@@ -455,16 +451,16 @@ class Cmyk1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["value"] = value;
-    _data["c"] = c;
-    _data["m"] = m;
-    _data["y"] = y;
-    _data["k"] = k;
-    return _data;
+    data["value"] = value;
+    data["c"] = c;
+    data["m"] = m;
+    data["y"] = y;
+    data["k"] = k;
+    return data;
   }
 }
 
@@ -492,12 +488,12 @@ class Fraction8 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["c"] = c;
-    _data["m"] = m;
-    _data["y"] = y;
-    _data["k"] = k;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["c"] = c;
+    data["m"] = m;
+    data["y"] = y;
+    data["k"] = k;
+    return data;
   }
 }
 
@@ -525,12 +521,12 @@ class Name1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["value"] = value;
-    _data["closest_named_hex"] = closestNamedHex;
-    _data["exact_match_name"] = exactMatchName;
-    _data["distance"] = distance;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["value"] = value;
+    data["closest_named_hex"] = closestNamedHex;
+    data["exact_match_name"] = exactMatchName;
+    data["distance"] = distance;
+    return data;
   }
 }
 
@@ -562,15 +558,15 @@ class Hsv1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["value"] = value;
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["v"] = v;
-    return _data;
+    data["value"] = value;
+    data["h"] = h;
+    data["s"] = s;
+    data["v"] = v;
+    return data;
   }
 }
 
@@ -594,11 +590,11 @@ class Fraction7 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["v"] = v;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["h"] = h;
+    data["s"] = s;
+    data["v"] = v;
+    return data;
   }
 }
 
@@ -630,15 +626,15 @@ class Hsl1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["l"] = l;
-    _data["value"] = value;
-    return _data;
+    data["h"] = h;
+    data["s"] = s;
+    data["l"] = l;
+    data["value"] = value;
+    return data;
   }
 }
 
@@ -662,11 +658,11 @@ class Fraction6 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["l"] = l;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["h"] = h;
+    data["s"] = s;
+    data["l"] = l;
+    return data;
   }
 }
 
@@ -698,15 +694,15 @@ class Rgb1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["r"] = r;
-    _data["g"] = g;
-    _data["b"] = b;
-    _data["value"] = value;
-    return _data;
+    data["r"] = r;
+    data["g"] = g;
+    data["b"] = b;
+    data["value"] = value;
+    return data;
   }
 }
 
@@ -730,11 +726,11 @@ class Fraction5 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["r"] = r;
-    _data["g"] = g;
-    _data["b"] = b;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["r"] = r;
+    data["g"] = g;
+    data["b"] = b;
+    return data;
   }
 }
 
@@ -754,10 +750,10 @@ class Hex1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["value"] = value;
-    _data["clean"] = clean;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["value"] = value;
+    data["clean"] = clean;
+    return data;
   }
 }
 
@@ -813,55 +809,53 @@ class Colors {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(hex != null) {
-      _data["hex"] = hex?.toJson();
+      data["hex"] = hex?.toJson();
     }
     if(rgb != null) {
-      _data["rgb"] = rgb?.toJson();
+      data["rgb"] = rgb?.toJson();
     }
     if(hsl != null) {
-      _data["hsl"] = hsl?.toJson();
+      data["hsl"] = hsl?.toJson();
     }
     if(hsv != null) {
-      _data["hsv"] = hsv?.toJson();
+      data["hsv"] = hsv?.toJson();
     }
     if(name != null) {
-      _data["name"] = name?.toJson();
+      data["name"] = name?.toJson();
     }
     if(cmyk != null) {
-      _data["cmyk"] = cmyk?.toJson();
+      data["cmyk"] = cmyk?.toJson();
     }
     if(xyz != null) {
-      _data["XYZ"] = xyz?.toJson();
+      data["XYZ"] = xyz?.toJson();
     }
     if(image != null) {
-      _data["image"] = image?.toJson();
+      data["image"] = image?.toJson();
     }
     if(contrast != null) {
-      _data["contrast"] = contrast?.toJson();
+      data["contrast"] = contrast?.toJson();
     }
     if(links != null) {
-      _data["_links"] = links?.toJson();
+      data["_links"] = links?.toJson();
     }
     if(embedded != null) {
-      _data["_embedded"] = embedded?.toJson();
+      data["_embedded"] = embedded?.toJson();
     }
-    return _data;
+    return data;
   }
 }
 
 class Embedded {
   Embedded();
 
-  Embedded.fromJson(Map<String, dynamic> json) {
-
-  }
+  Embedded.fromJson(Map<String, dynamic> json);
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
 
-    return _data;
+    return data;
   }
 }
 
@@ -877,11 +871,11 @@ class Links {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(self != null) {
-      _data["self"] = self?.toJson();
+      data["self"] = self?.toJson();
     }
-    return _data;
+    return data;
   }
 }
 
@@ -897,9 +891,9 @@ class Self {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["href"] = href;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["href"] = href;
+    return data;
   }
 }
 
@@ -915,9 +909,9 @@ class Contrast {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["value"] = value;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["value"] = value;
+    return data;
   }
 }
 
@@ -937,10 +931,10 @@ class Image {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["bare"] = bare;
-    _data["named"] = named;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["bare"] = bare;
+    data["named"] = named;
+    return data;
   }
 }
 
@@ -972,15 +966,15 @@ class Xyz {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["value"] = value;
-    _data["X"] = x;
-    _data["Y"] = y;
-    _data["Z"] = z;
-    return _data;
+    data["value"] = value;
+    data["X"] = x;
+    data["Y"] = y;
+    data["Z"] = z;
+    return data;
   }
 }
 
@@ -1004,11 +998,11 @@ class Fraction4 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["X"] = x;
-    _data["Y"] = y;
-    _data["Z"] = z;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["X"] = x;
+    data["Y"] = y;
+    data["Z"] = z;
+    return data;
   }
 }
 
@@ -1044,16 +1038,16 @@ class Cmyk {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["value"] = value;
-    _data["c"] = c;
-    _data["m"] = m;
-    _data["y"] = y;
-    _data["k"] = k;
-    return _data;
+    data["value"] = value;
+    data["c"] = c;
+    data["m"] = m;
+    data["y"] = y;
+    data["k"] = k;
+    return data;
   }
 }
 
@@ -1081,12 +1075,12 @@ class Fraction3 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["c"] = c;
-    _data["m"] = m;
-    _data["y"] = y;
-    _data["k"] = k;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["c"] = c;
+    data["m"] = m;
+    data["y"] = y;
+    data["k"] = k;
+    return data;
   }
 }
 
@@ -1114,12 +1108,12 @@ class Name {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["value"] = value;
-    _data["closest_named_hex"] = closestNamedHex;
-    _data["exact_match_name"] = exactMatchName;
-    _data["distance"] = distance;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["value"] = value;
+    data["closest_named_hex"] = closestNamedHex;
+    data["exact_match_name"] = exactMatchName;
+    data["distance"] = distance;
+    return data;
   }
 }
 
@@ -1151,15 +1145,15 @@ class Hsv {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["value"] = value;
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["v"] = v;
-    return _data;
+    data["value"] = value;
+    data["h"] = h;
+    data["s"] = s;
+    data["v"] = v;
+    return data;
   }
 }
 
@@ -1183,11 +1177,11 @@ class Fraction2 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["v"] = v;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["h"] = h;
+    data["s"] = s;
+    data["v"] = v;
+    return data;
   }
 }
 
@@ -1219,15 +1213,15 @@ class Hsl {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["l"] = l;
-    _data["value"] = value;
-    return _data;
+    data["h"] = h;
+    data["s"] = s;
+    data["l"] = l;
+    data["value"] = value;
+    return data;
   }
 }
 
@@ -1251,11 +1245,11 @@ class Fraction1 {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["h"] = h;
-    _data["s"] = s;
-    _data["l"] = l;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["h"] = h;
+    data["s"] = s;
+    data["l"] = l;
+    return data;
   }
 }
 
@@ -1287,15 +1281,15 @@ class Rgb {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(fraction != null) {
-      _data["fraction"] = fraction?.toJson();
+      data["fraction"] = fraction?.toJson();
     }
-    _data["r"] = r;
-    _data["g"] = g;
-    _data["b"] = b;
-    _data["value"] = value;
-    return _data;
+    data["r"] = r;
+    data["g"] = g;
+    data["b"] = b;
+    data["value"] = value;
+    return data;
   }
 }
 
@@ -1319,11 +1313,11 @@ class Fraction {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["r"] = r;
-    _data["g"] = g;
-    _data["b"] = b;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["r"] = r;
+    data["g"] = g;
+    data["b"] = b;
+    return data;
   }
 }
 
@@ -1343,9 +1337,9 @@ class Hex {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["value"] = value;
-    _data["clean"] = clean;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["value"] = value;
+    data["clean"] = clean;
+    return data;
   }
 }
