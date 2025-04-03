@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:colorschema/widget/textstyles.dart';
 class ShadowedCard extends StatelessWidget {
-  ShadowedCard({
+  const ShadowedCard({super.key, 
     required this.red1,
     required this.red2,
     required this.red3,
@@ -27,20 +27,20 @@ class ShadowedCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
+            color: const Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
             spreadRadius: 1,
             blurRadius: 10,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
-        color: Color.fromARGB(255, 255, 255, 255),
+        color: const Color.fromARGB(255, 255, 255, 255),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             padding: const EdgeInsets.all(20),
-            child: Row(
+            child: const Row(
               children: [
                 Text(
                   "Color",
@@ -71,10 +71,10 @@ class ShadowedCard extends StatelessWidget {
                 decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
+                        color: const Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
                         spreadRadius: 1,
                         blurRadius: 10,
-                        offset: Offset(0, 3),
+                        offset: const Offset(0, 3),
                       ),
                     ],
                     color: Colors.amber[50],
@@ -84,13 +84,13 @@ class ShadowedCard extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.5,
                 child: Center(child: Text(code1.toString(),style: kCodeColor,)),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Icon(Icons.copy)
+              const Icon(Icons.copy)
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Row(
             children: [
               Container(
@@ -103,10 +103,10 @@ class ShadowedCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
+                      color: const Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
                       spreadRadius: 1,
                       blurRadius: 10,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                   borderRadius: BorderRadius.circular(10),
@@ -117,13 +117,13 @@ class ShadowedCard extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.5,
                  child: Center(child: Text(code2.toString(),style: kCodeColor,)),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Icon(Icons.copy)
+              const Icon(Icons.copy)
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Row(
             children: [
               Container(
@@ -136,10 +136,10 @@ class ShadowedCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
+                      color: const Color.fromARGB(255, 27, 27, 27).withOpacity(0.5),
                       spreadRadius: 1,
                       blurRadius: 10,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                   borderRadius: BorderRadius.circular(10),
@@ -150,13 +150,13 @@ class ShadowedCard extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.5,
                  child: Center(child: Text(code3.toString(),style: kCodeColor,)),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Icon(Icons.copy)
+              const Icon(Icons.copy)
             ],
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );

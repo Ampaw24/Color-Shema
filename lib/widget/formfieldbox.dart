@@ -48,7 +48,7 @@ class FormFieldBox extends StatelessWidget {
             hintStyle: kLoginTextfield,
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: Color(0xffEEE6E6),
               ),
             ),

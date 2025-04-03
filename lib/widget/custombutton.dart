@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constants/colors.dart';
 import '../constants/textstyle.dart';
 
 class CustomButton1 extends StatelessWidget {
@@ -24,16 +23,16 @@ class CustomButton1 extends StatelessWidget {
       onTap: onpressed,
       child: Container(
         margin: const EdgeInsets.only(top: 25),
+        width: 296,
+        height: 64,
+        decoration: BoxDecoration(
+            color: btnColor, borderRadius: BorderRadius.circular(20)),
         child: Center(
           child: Text(
             buttonText,
             style: GoogleFonts.poppins(textStyle: kLoginbutton),
           ),
         ),
-        width: 296,
-        height: 64,
-        decoration: BoxDecoration(
-            color: btnColor, borderRadius: BorderRadius.circular(20)),
       ),
     );
   }

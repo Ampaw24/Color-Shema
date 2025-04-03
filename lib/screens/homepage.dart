@@ -1,15 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'dart:convert';
-import 'dart:ffi';
 import 'package:colorschema/constants/colors.dart';
 import 'package:colorschema/widget/formfieldbox.dart';
 import 'package:flutter/material.dart';
 import 'package:colorschema/module/slectordata.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:http/http.dart' as http;
-import 'resultsScreen.dart';
-import 'package:colorschema/networking/networkhelper.dart';
 import 'loadingpage.dart';
 import 'package:colorschema/constants/textstyle.dart';
 
@@ -49,7 +44,7 @@ class _HomePageState extends State<HomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 width: 414,
                 height: 170,
                 child: Stack(
@@ -71,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                           boxShadow: [
                             BoxShadow(
                               color:
-                                  Color.fromARGB(255, 0, 0, 0).withOpacity(0.3),
+                                  Color.fromARGB(255, 0, 0, 0).withValues(alpha:0.3),
                               spreadRadius: 1,
                               blurRadius: 10,
                               offset: Offset(0, 5),
@@ -172,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                               boxShadow: [
                                 BoxShadow(
                                   color: Color.fromARGB(255, 0, 0, 0)
-                                      .withOpacity(0.5),
+                                      .withValues(alpha:0.5),
                                   spreadRadius: 1,
                                   blurRadius: 10,
                                   offset: Offset(0, 5),

@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=C:\src\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\Young Geeks Pc\Desktop\flutter\project\colorschema"
+export "FLUTTER_ROOT=/Users/safoampaw/development/flutter"
+export "FLUTTER_APPLICATION_PATH=/Users/safoampaw/Documents/Color-Shema"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=1.0.0"

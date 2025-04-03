@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../constants/colors.dart';
 
 class CurledContainer extends StatelessWidget {
   const CurledContainer(
@@ -24,10 +23,10 @@ class CurledContainer extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: Color.fromARGB(255, 0, 0, 0).withOpacity(0.5),
+            color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5),
             spreadRadius: 1,
             blurRadius: 10,
-            offset: Offset(0, 5),
+            offset: const Offset(0, 5),
           ),
         ],
         borderRadius: BorderRadius.only(
