@@ -52,7 +52,7 @@ class _SignUpPageState extends State<SignUpPage> {
             CurledContainer(
                 topleft: 68,
                 bottomright: 68,
-                color: GreenishgDarkTheme['cardWhite'],
+                color: GreenishgDarkTheme['cardWhite']!,
                 boxwidth: 350,
                 boxheight: MediaQuery.of(context).size.height * 1.43,
                 child: Column(

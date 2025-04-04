@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                 bottomright: 68,
                 boxheight: MediaQuery.of(context).size.height * 1.43,
                 boxwidth: 350,
-                color: GreenishgDarkTheme['cardWhite'],
+                color: GreenishgDarkTheme['cardWhite']!,
                 child: Column(
                   children: [
                     Container(

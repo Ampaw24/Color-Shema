@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CurledContainer extends StatelessWidget {
   const CurledContainer(
       {super.key,
@@ -13,7 +12,7 @@ class CurledContainer extends StatelessWidget {
       this.bottomright = 0,
       this.bottomleft = 0});
   final double boxwidth, boxheight, topright, topleft, bottomright, bottomleft;
-  final color;
+  final Color color;
   final Widget child;
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class CurledContainer extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5),
+            color: const Color.fromARGB(255, 0, 0, 0).withValues(alpha:0.5),
             spreadRadius: 1,
             blurRadius: 10,
             offset: const Offset(0, 5),
