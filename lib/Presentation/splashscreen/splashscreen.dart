@@ -1,10 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'dart:async';
-import 'package:colorschema/constants/textstyle.dart';
+import 'package:colorschema/core/utils/colors.utils.dart';
+import 'package:colorschema/core/utils/fontstyles.dart';
+import 'package:colorschema/core/utils/image.utils.dart';
+import 'package:colorschema/core/utils/strings.utils.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:colorschema/constants/colors.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import '../Login-SignUp/login.dart';
 
@@ -16,7 +17,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  var logo = "assets/logomain.png";
   @override
   void initState() {
     loadUp();
@@ -35,34 +35,31 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: GreenishgDarkTheme['themeColorDark'],
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
             child: Container(
-              height: 180,
-              width: 190,
+              height: size.height * 0.20,
+              width: size.width * 0.50,
               decoration: BoxDecoration(
-             image:  DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage("assets/logomain.png"),
-              )
-              ),
-        
+                  image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(AppImages.logo),
+              )),
             ),
           ),
-          Text("ALPHA SCHEMA",style: GoogleFonts.poppins(
-            textStyle: kCompanyTitleText,
-          ),),
-             Text("The Color Scheming App",style: GoogleFonts.poppins(
-            textStyle: kCompanysubTitleText,
-          ),),
-          SizedBox(height: 20,),
-          SpinKitThreeBounce(
-            color: GreenishgDarkTheme['ballWhite'],
-          )
+          Text(
+            APPTITLE,
+            style: kCompanyTitleText,
+          ),
+          Text(
+            SUBNAME,
+            style: kCompanysubTitleText,
+          ),
+          SpinKitFadingCircle(color: PRIMARY)
         ],
       ),
     );

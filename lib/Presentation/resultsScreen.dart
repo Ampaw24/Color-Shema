@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables
-import 'package:colorschema/screens/homepage.dart';
+import 'package:colorschema/Presentation/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:colorschema/widget/shadowedcontainer.dart';
 

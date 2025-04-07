@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:colorschema/constants/colors.dart';
+import 'package:colorschema/core/utils/colors.utils.dart';
+import 'package:colorschema/core/utils/fontstyles.dart';
 import 'package:colorschema/widget/formfieldbox.dart';
 import 'package:flutter/material.dart';
 import 'package:colorschema/module/slectordata.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'loadingpage.dart';
-import 'package:colorschema/constants/textstyle.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -109,7 +109,6 @@ class _HomePageState extends State<HomePage> {
                         offset: Offset(0, 5),
                       ),
                     ],
-                    color: GreenishgDarkTheme['themeColorDark'],
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(
@@ -137,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                             isExpanded: true,
                             decoration: InputDecoration(
                                 filled: true,
-                                fillColor: GreenishgDarkTheme['cardWhite'],
+                                fillColor: CARDWHITE,
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
                                     borderSide: BorderSide(

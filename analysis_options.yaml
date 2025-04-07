@@ -10,6 +10,8 @@
 analyzer:
   errors:
     non_constant_identifier_names: ignore
+    constant_identifier_names: ignore
+    camel_case_types: ignore
 include: package:flutter_lints/flutter.yaml
 
 linter:

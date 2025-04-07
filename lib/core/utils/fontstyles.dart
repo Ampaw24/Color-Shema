@@ -1,21 +1,30 @@
+import 'package:colorschema/core/utils/colors.utils.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-const kCompanyTitleText = TextStyle(
+TextStyle kCompanyTitleText = GoogleFonts.inter(
   color: Colors.white,
-  fontWeight: FontWeight.bold,
+  fontWeight: FontWeight.w500,
   fontSize: 20,
   fontStyle: FontStyle.normal,
 );
-const kCompanysubTitleText = TextStyle(
+TextStyle kHintText = GoogleFonts.poppins(
   color: Colors.white,
-  fontWeight: FontWeight.w100,
-  fontSize: 16,
+  fontWeight: FontWeight.w400,
+  fontSize: 12,
+);
+
+TextStyle kCompanysubTitleText = GoogleFonts.inter(
+  color: BLACK,
+  fontWeight: FontWeight.w300,
+  fontSize: 12,
   fontStyle: FontStyle.normal,
 );
-const kLoginTextHead = TextStyle(
-  color: Color(0xff050E0D),
+
+TextStyle kTextHead = GoogleFonts.inter(
+  color: PRIMARY,
   fontWeight: FontWeight.w500,
-  fontSize: 34,
+  fontSize: 20,
   fontStyle: FontStyle.normal,
 );
 const kLoginTextfield = TextStyle(
@@ -25,11 +34,10 @@ const kLoginTextfield = TextStyle(
   fontStyle: FontStyle.normal,
 );
 
-const kLoginbutton = TextStyle(
+TextStyle kbuttonText = GoogleFonts.poppins(
   color: Colors.white,
-  fontWeight: FontWeight.w300,
-  fontSize: 26,
-  fontStyle: FontStyle.normal,
+  fontWeight: FontWeight.w500,
+  fontSize: 14,
 );
 const kCreateTextfield = TextStyle(
   color: Color(0xff050E0D),
@@ -73,5 +81,3 @@ const kcardNoteText2 = TextStyle(
   fontSize: 30,
   fontStyle: FontStyle.normal,
 );
-
-

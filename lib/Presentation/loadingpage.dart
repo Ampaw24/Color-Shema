@@ -1,8 +1,8 @@
-import 'package:colorschema/screens/resultsScreen.dart';
+import 'package:colorschema/Presentation/resultsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-import '../networking/networkhelper.dart';
+import '../core/Network/networkhelper.dart';
 
 class LoadingPage extends StatefulWidget {
   const LoadingPage({super.key, required this.colorcode, required this.mode});
