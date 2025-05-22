@@ -1,6 +1,6 @@
+import 'package:colorschema/core/utils/colors.utils.dart';
+import 'package:colorschema/core/utils/fontstyles.dart';
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
-import '../constants/textstyle.dart';
 
 typedef MyCallback = void Function(String);
 
@@ -53,7 +53,7 @@ class FormFieldBox extends StatelessWidget {
               ),
             ),
             filled: true,
-            fillColor: GreenishgDarkTheme['formfieldwhite'],
+            fillColor: CARDWHITE,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
             )),

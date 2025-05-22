@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constants/textstyle.dart';
 
 class CustomButton1 extends StatelessWidget {
   const CustomButton1({
@@ -30,7 +29,7 @@ class CustomButton1 extends StatelessWidget {
         child: Center(
           child: Text(
             buttonText,
-            style: GoogleFonts.poppins(textStyle: kLoginbutton),
+            style: GoogleFonts.poppins(),
           ),
         ),
       ),
